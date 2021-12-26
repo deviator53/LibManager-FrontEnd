@@ -1,0 +1,59 @@
+.bannerImg{
+    position: relative;
+    background-image: url('../../images/banner3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.banner__overlay{
+    background: rgba(228, 224, 224, 0.589);
+    padding: 20px;
+    width: 800px;
+    margin: 20px auto;
+}
+.banner__overlay h3{
+    text-align: center;
+    color: #39075a;
+    font-size: 32px;
+    font-weight: 600;
+}
+.overlay__text{
+    font-size: 22px;
+}
+
+.banner__btn{
+    display:block;
+    background-color: #39075a;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+}
+.banner__btn:hover{
+    background-color: #111;
+    color: white;
+}
+
+@media only screen and (max-width:560px){
+    .banner__overlay h3{
+        font-size: 25px;
+    }
+    .overlay__text{
+        font-size: 18px;
+    }
+    .banner__btn{
+        font-size: 16px;
+    }
+}

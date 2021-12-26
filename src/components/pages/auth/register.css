@@ -1,0 +1,63 @@
+/* STYLING FOR REGISTER PAGE */
+.register-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container .register-content{
+    max-width: 900px;
+    /* border: 2px solid black; */
+    padding: 25px 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+.register-content h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.header-title{
+    color:#39075a;
+}
+.register-content p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.register-content .inputBox{
+    position: relative;
+    margin-bottom: 20px;
+}
+.register-content .inputBox label{
+    color: #111;
+    font-weight: bold;
+}
+.register-content .inputBox .input{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.register-content .button{
+    font-size: 1em;
+    color: #fff;
+    width: 100%;
+    background: #39075a;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.register-content .button:hover{
+    color: #fff;
+    background: #130606;
+    
+}
