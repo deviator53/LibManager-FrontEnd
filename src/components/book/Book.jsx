@@ -1,27 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import products from '../../data/products'; 
 import axios from "axios";
 
 const Book = () => {
-    const { id } = useParams(); 
+    const [ ProductData, setProductData] = useState({});
+    let params = useParams();
 
-    const [bookDetails, setBookDetails] = useState();
-        let navigate = useNavigate();
-     
+    const getDetails = async () => {
+		const data = await fetch(`${products}/${params.detail}`);
+        const detailData = await data.json();
+        console.log(data);
+        setProductData(detailData);
+		
+    };
+
     useEffect(() => {
-        axios.get(`http://localhost:8000/data/products/${id}`).then((res) =>{
-            const responseBook = res.data;
-            setBookDetails(responseBook); 
-        });
-    }, 
-    []);
+		getDetails()
+	}, []);
 
-    const { author, title, price, imageUrl, countInStock, id: bookId } = bookDetails || {};
+    
+
 
     return (
-        <div>
-            {bookDetails ? (<div></div>) : (<div></div>)}
-        </div>
+        <>
+        	<div className="card-heading">{ProductData.title}</div>
+
+        </>
     )
 }
 

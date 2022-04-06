@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from '../navbar/Navbar';
 import Banner from '../banner/Banner';
 import Info from '../info/Info';
-import Intro from '../intro/Intro';
+import Books from '../books/Books';
 import products from '../../data/products'; 
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         <Navbar/>
         <Banner/>
         <Info/>
-        <Intro prod={prod}/>
+        <Books prod={prod}/>
         </div>
         </>
         

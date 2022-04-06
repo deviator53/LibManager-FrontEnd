@@ -8,6 +8,7 @@ const products = [
         "The Silent Patient",
       price: 49,
       countInStock: 15,
+      description: "The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive"
     },
     {
         id: "2",
@@ -18,6 +19,7 @@ const products = [
         "The Girl Friend",
       price: 10.89,
       countInStock: 10,
+      description: "A girl. A boy. His mother. And the lie she'll wish she'd never told."
     },
     {
         id: "3",
@@ -28,6 +30,8 @@ const products = [
         "The Hobbit",
       price: 1300,
       countInStock: 5,
+      description: "The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive"
+
     },
     {
         id: "4",
@@ -38,6 +42,8 @@ const products = [
         "The Handmaid's Tale",
       price: 50,
       countInStock: 25,
+      description: "The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive"
+
     },
     {
         id: "5",
@@ -48,6 +54,8 @@ const products = [
         "Life of Pi",
       price: 233,
       countInStock: 4,
+      description: "The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive"
+
     },
     {
         id: "6",
@@ -58,6 +66,8 @@ const products = [
         "I Found You",
       price: 140,
       countInStock: 10,
+      description: "The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive"
+
     },
   ];
   

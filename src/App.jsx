@@ -8,7 +8,7 @@ import VerifyUser from "./components/pages/auth/VerifyUser";
 import Register from './components/pages/auth/Register';
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import Intro from './components/intro/Intro';
+import Books from './components/books/Books';
 import products from './data/products';
 
 
@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Login/>}/>
-          <Route path="/book/:id" element={<Book/>}/>
+          <Route path="/book/:detail" element={<Book/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/verify-user" element={<VerifyUser/>}/>
           <Route path="/register" element={<Register/>}/>
